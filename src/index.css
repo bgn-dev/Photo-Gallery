@@ -13,24 +13,23 @@ code {
 }
 
 .grid {
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  
+  grid-gap: 10px;
 }
 
 .img_wrap {
+  overflow: hidden;
   padding: 15px;
-  display: inline-block;
+  position: relative;
 }
 
 .img_wrap img {
   max-width: 100%;
 	height: auto;
-  /*display: block;
-	object-fit: cover; */
 } 
-
 
 .drop_off{
   position: fixed;
@@ -43,8 +42,8 @@ code {
 
 .drop_off img{
   display: block;
-  max-width: 60%;
-  max-height: 80%;
+  max-width: 90%;
+  max-height: 90%;
   margin: 60px auto;
   box-shadow: 3px 5px 7px rgb(0,0,0,0.5);
   border: 3px solid white;
