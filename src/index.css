@@ -13,23 +13,37 @@ code {
 }
 
 .grid {
-  margin: auto;
+  padding: 3.75%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 10px;
+  grid-template-columns: 100%;
+  grid-column-gap: 0;
+  grid-row-gap: 15px;
+  width: 95%;
+  align-items: center;
 }
 
-.img_wrap {
-  overflow: hidden;
-  padding: 15px;
-  position: relative;
+@media only screen and (min-width: 640px) {
+  .grid {
+    grid-template-columns: 47.5% 47.5%;
+    grid-column-gap: 3%;
+    width: 95%;
+    align-items: center;
+  }
 }
 
-.img_wrap img {
+@media only screen and (min-width: 981px) {
+  .grid {
+    grid-template-columns: 30% 30% 34%;
+    width: 95%;
+    align-items: center;
+  }
+}
+
+.grid img {
   max-width: 100%;
 	height: auto;
-} 
+  object-fit: cover;
+}
 
 .drop_off{
   position: fixed;

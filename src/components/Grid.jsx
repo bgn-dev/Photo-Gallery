@@ -26,12 +26,9 @@ export default function Grid({ setSelectedImg }) {
   */
 
   return (
-    <div className='grid'>
+    <div className="grid">
       { imagesDoc && imagesDoc.map(images => (
-        <div className='img_wrap' key={images.id}
-        onClick={() => setSelectedImg(images.url)}>
-          <img src={images.url} alt="uploaded pic" />
-        </div>
+        <img src={images.url} key={images.id} alt="uploaded pic" onClick={() => setSelectedImg(images.url)}/>
       )) }
     </div>
   )
