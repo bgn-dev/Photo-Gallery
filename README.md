@@ -16,7 +16,7 @@ The project utilizes React/JavaScript on the frontend and Flask on the backend.
 The database is built using real time database Firestore.
 
 ### How to configure this WebApp for your use
-To run this webapp properly, you need to change the <em><strong>const firebaseConfig</strong></em> in <em>/src/firebase/config.js</em>.
+To run this webapp properly, you need to change the <em><strong>const firebaseConfig</strong></em> in <em>/src/firebase/config.js</em>.  
 A database within Firestore is necessary.
 
 ### How to run this App as localhost
