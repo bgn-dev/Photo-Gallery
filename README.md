@@ -12,7 +12,7 @@
 
 ## Architecture
 
-The project utilizes React/JavaScript on the frontend and Flask on the backend.
+The project utilizes React/JavaScript on the frontend and Flask on the backend.  
 The database is built using real time database Firestore.
 
 ### How to configure this WebApp for your use
