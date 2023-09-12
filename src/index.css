@@ -3,8 +3,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
 code {
@@ -12,30 +12,45 @@ code {
     monospace;
 }
 
+.navbar {
+  min-width: 100%;
+  background: whitesmoke;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  height: 10vh;
+}
+
 .grid {
-  padding: 3.75%;
   display: grid;
   grid-template-columns: 100%;
   grid-column-gap: 0;
   grid-row-gap: 15px;
   width: 95%;
   align-items: center;
+  margin-top: 5em;
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 768px) {
   .grid {
-    grid-template-columns: 47.5% 47.5%;
-    grid-column-gap: 3%;
-    width: 95%;
-    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 }
 
-@media only screen and (min-width: 981px) {
+@media only screen and (min-width: 960px) {
   .grid {
-    grid-template-columns: 30% 30% 34%;
-    width: 95%;
-    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
   }
 }
 
@@ -43,6 +58,7 @@ code {
   max-width: 100%;
 	height: auto;
   object-fit: cover;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
 }
 
 .drop_off{
@@ -52,6 +68,7 @@ code {
   width: 100%;
   height: 100%;
   background: rgb(0,0,0,0.5);
+  z-index: 2;
 }
 
 .drop_off img{

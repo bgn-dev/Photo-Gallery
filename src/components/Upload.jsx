@@ -83,7 +83,7 @@ export default function Upload() {
       */
 
   return (
-    <div>    
+    <div className="navbar">    
         <input type="file" onChange={handleChange} accept="image/*"/>
         <button onClick={handleUpload}>Upload</button>
         <p> { (showPercent !== 0) && percent + "%" } </p>
