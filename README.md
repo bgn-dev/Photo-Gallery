@@ -3,7 +3,7 @@
 [![Screenshot-2023-09-12-at-20-58-51-React-App.png](https://i.postimg.cc/9Qjtwp4g/Screenshot-2023-09-12-at-20-58-51-React-App.png)](https://postimg.cc/0bcJL707)
 [![Screenshot-2023-09-12-at-20-59-05-React-App.png](https://i.postimg.cc/sxh7vQ3R/Screenshot-2023-09-12-at-20-59-05-React-App.png)](https://postimg.cc/q6pzF7tm)
 
-🎉 This project allows users to upload and view their photos.
+🎉 This project allows users to upload and view their photos. 🎉
 
 ## Features include
 
