@@ -5,20 +5,20 @@
 
 🎉 This project allows users to upload and view their photos.
 
-## Features
+## Features include
 
 - Upload your photos
 - View your photos enlarged
 
 ## Architecture
 
-The project utilizes React/JavaScript on the frontend and Flask on the backend.  
-The database is built using real time database Firestore.
+The project uses React/JavaScript on the frontend and Flask on the backend.  
+The database is built using the real-time database Firestore.
 
-### How to configure this WebApp for your use
-To run this webapp properly, you need to change the <em><strong>const firebaseConfig</strong></em> in <em>/src/firebase/config.js</em>.  
-A database within Firestore is necessary.
+### How to configure this application for your use
+In order for this webapp to run properly, you need to modify the <em><strong>const firebaseConfig</strong></em> in <em>/src/firebase/config.js</em>.  
+A database inside the Firestore is required.
 
-### How to run this App as localhost
+### To run this application as localhost
 Run `npm run start` inside the main folder.
 
