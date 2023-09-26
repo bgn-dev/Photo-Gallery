@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './Enlarged.css'
+
 const Enlarged = ({ selectedImg, setSelectedImg }) => {
 
   /*  When the click is registered, first check if its outside of the drop_off div (outside of the image which is shown),

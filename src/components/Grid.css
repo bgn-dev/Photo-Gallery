@@ -1,0 +1,37 @@
+.grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 0;
+    grid-row-gap: 15px;
+    width: 95%;
+    align-items: center;
+    margin-top: 5em;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  }
+  
+  @media only screen and (min-width: 960px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .grid {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+  }
+  
+  .grid img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  }

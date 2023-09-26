@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import './App.css';
 import Grid from './components/Grid';
 import Enlarged from './components/Enlarged';
 import Upload from './components/Upload';
+
+import './App.css';
 
 function App() {
 

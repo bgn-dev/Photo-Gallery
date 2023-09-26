@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { collection, onSnapshot, orderBy, query } from "@firebase/firestore"
 import { firestore } from '../firebase/config';
 
+import './Grid.css'
+
 export default function Grid({ setSelectedImg }) {
 
   const [imagesDoc, setImagesDoc] = useState([]);

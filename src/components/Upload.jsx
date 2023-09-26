@@ -3,6 +3,10 @@ import { storage, firestore } from "../firebase/config"
 import { addDoc, serverTimestamp, collection } from "@firebase/firestore"
 import { ref, uploadBytesResumable, getDownloadURL } from "@firebase/storage";
 
+import './Upload.css'
+
+import { BiUpload } from 'react-icons/bi';
+
 export default function Upload() {
 
   const [file, setFile] = useState("");
@@ -86,7 +90,7 @@ export default function Upload() {
   return (
     <div className="navbar">
       <input type="file" onChange={handleChange} accept="image/*" />
-      <button onClick={handleUpload}>Upload</button>
+      <button onClick={handleUpload}> <BiUpload /> </button>
       <p> {(showPercent !== 0) && percent + "%"} </p>
     </div>
   );
