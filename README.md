@@ -1,25 +1,30 @@
 # Photo Gallery
 
-[![Screenshot-2023-09-12-at-20-58-51-React-App.png](https://i.postimg.cc/9Qjtwp4g/Screenshot-2023-09-12-at-20-58-51-React-App.png)](https://postimg.cc/0bcJL707)
-[![Screenshot-2023-09-12-at-20-59-05-React-App.png](https://i.postimg.cc/sxh7vQ3R/Screenshot-2023-09-12-at-20-59-05-React-App.png)](https://postimg.cc/q6pzF7tm)
+[![Bildschirmfoto-2023-09-26-um-23-25-36.jpg](https://i.postimg.cc/25sxfcyz/Bildschirmfoto-2023-09-26-um-23-25-36.jpg)](https://postimg.cc/ns1m41q5)
+[![Bildschirmfoto-2023-09-26-um-23-28-35.jpg](https://i.postimg.cc/C1Cbpw9N/Bildschirmfoto-2023-09-26-um-23-28-35.jpg)](https://postimg.cc/DJZSq3vJ)
 
-🎉 This project allows users to upload and view their photos. 🎉
+🎉 This application allows users to upload and view their photos. 🎉
 
 ## Features include
 
 - Upload your photos
-- View your photos enlarged
+- View your enlarged photos
 
 ## Architecture
 
 The project uses React/JavaScript on the frontend.  
-The database is built using the real-time database Firestore.
+The database is built using the Firestore real-time database.
 
-### How to configure this application for your use
+> **Note**
+> This application does not use a backend server.
+
+## How to configure this application for your use
 In order for this webapp to run properly, you need to modify the <em><strong>const firebaseConfig</strong></em> in <em>/src/firebase/config.js</em>.  
-A database inside the Firestore is required.
+A Firestore database is required.
 
 ### To run this application as localhost
 Run `npm run start` inside the main folder.
 
-### ❌ Disclaimer: This application is not yet ready for a server deployment.
+## License
+
+MIT
