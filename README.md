@@ -12,7 +12,7 @@
 
 ## Architecture
 
-The project uses React/JavaScript on the frontend and Flask on the backend.  
+The project uses React/JavaScript on the frontend.  
 The database is built using the real-time database Firestore.
 
 ### How to configure this application for your use
@@ -22,3 +22,4 @@ A database inside the Firestore is required.
 ### To run this application as localhost
 Run `npm run start` inside the main folder.
 
+### ❌ Disclaimer: This application is not yet ready for a server deployment.
