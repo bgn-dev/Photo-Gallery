@@ -15,22 +15,23 @@ export default function Upload() {
     setFile(e.target.files[0]);
     console.log("file is assigned");
   }
-  
+
   /*  @if: check if an file is selected by the user
       @storageRef: create a reference for the selected file 
-      @uploadTask: use the method uploadBytesResumable to calculate the percentage of the already uploaded file
-      @uploadTask.on: when the state is changed, calculate the new percentage */
-  const handleUpload = async(e) => {
-    if(!file) {
-        alert("Please select an image type file.");
+      @uploadTask: use the method uploadBytesResumable to calculate the upload progress
+      @uploadTask.on: when the state is changed, calculate the new percentage 
+      */
+  const handleUpload = async (e) => {
+    if (!file) {
+      alert("Please select an image type file.");
     }
     // some image is in process, so set showPercentage true
     setShowPercent(1);
 
     const storageRef = ref(storage, file.name);
     const uploadTask = uploadBytesResumable(storageRef, file);
-    
-    uploadTask.on("state_changed", 
+
+    uploadTask.on("state_changed",
       (snapshot) => {
         const percent = Math.round((snapshot.bytesTransferred / snapshot.totalBytes) * 100);
         // update progress
@@ -39,13 +40,13 @@ export default function Upload() {
         // log error
         console.log(err);
       }, () => {
-            // download url
-            getDownloadURL(uploadTask.snapshot.ref).then((url) => {
-              // upload of the image is done, set showPercentage false
-              setShowPercent(0);
-              setURL(url);
-              console.log(url);
-            });
+        // download url
+        getDownloadURL(uploadTask.snapshot.ref).then((url) => {
+          // upload of the image is done, set showPercentage false
+          setShowPercent(0);
+          setURL(url);
+          console.log(url);
+        });
       }
     );
   }
@@ -59,17 +60,17 @@ export default function Upload() {
     const firestoreRef = collection(firestore, "images");
     if (url) {
       console.log("a new url is assigned")
-      const fetchD = async() => {
+      const fetchD = async () => {
         const docRef = await addDoc(firestoreRef, {
           url: url,
           timestamp: serverTimestamp(),
         });
         console.log("Document written with ID: ", docRef.id);
       }
-      
+
       const result = fetchD()
-      .catch(console.error);;
-  
+        .catch(console.error);;
+
       // log the result
       console.log(result);
 
@@ -83,10 +84,10 @@ export default function Upload() {
       */
 
   return (
-    <div className="navbar">    
-        <input type="file" onChange={handleChange} accept="image/*"/>
-        <button onClick={handleUpload}>Upload</button>
-        <p> { (showPercent !== 0) && percent + "%" } </p>
+    <div className="navbar">
+      <input type="file" onChange={handleChange} accept="image/*" />
+      <button onClick={handleUpload}>Upload</button>
+      <p> {(showPercent !== 0) && percent + "%"} </p>
     </div>
   );
 }

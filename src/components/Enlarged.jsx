@@ -4,10 +4,9 @@ const Enlarged = ({ selectedImg, setSelectedImg }) => {
 
   /*  When the click is registered, first check if its outside of the drop_off div (outside of the image which is shown),
       then set selected image to null, so the div drop_off is not shown anymore, which is handled in the App.js
-
   */
   const handleClick = (e) => {
-    if(e.target.classList.contains("drop_off")) {
+    if (e.target.classList.contains("drop_off")) {
       setSelectedImg(null);
     }
   }
@@ -17,7 +16,7 @@ const Enlarged = ({ selectedImg, setSelectedImg }) => {
   */
   return (
     <div className="drop_off" onClick={handleClick}>
-        <img src={selectedImg} alt="enlarged" />
+      <img src={selectedImg} alt="enlarged" />
     </div>
   )
 }

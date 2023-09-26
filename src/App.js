@@ -13,8 +13,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Upload />
-        <Grid setSelectedImg={setSelectedImg}/>
-        { selectedImg && <Enlarged selectedImg={selectedImg} setSelectedImg={setSelectedImg} /> }
+        <Grid setSelectedImg={setSelectedImg} />
+        {selectedImg && <Enlarged selectedImg={selectedImg} setSelectedImg={setSelectedImg} />}
       </header>
     </div>
   );

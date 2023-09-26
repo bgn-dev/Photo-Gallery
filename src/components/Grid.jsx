@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { collection, onSnapshot, orderBy, query} from "@firebase/firestore"
+import { collection, onSnapshot, orderBy, query } from "@firebase/firestore"
 import { firestore } from '../firebase/config';
 
 export default function Grid({ setSelectedImg }) {
@@ -17,8 +17,8 @@ export default function Grid({ setSelectedImg }) {
           the results are the data of the document and the document id, which is automatically given by firebase at the upload
           ... : the three dots gives for each row a property in the array doc (call it an array in array)
       */
-      setImagesDoc(snapshot.docs.map((doc) => ({...doc.data(), id: doc.id})))
-    }) 
+      setImagesDoc(snapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
+    })
   }, []);
 
   /*  for every image, there exists an wrap
@@ -27,9 +27,9 @@ export default function Grid({ setSelectedImg }) {
 
   return (
     <div className="grid">
-      { imagesDoc && imagesDoc.map(images => (
-        <img src={images.url} key={images.id} alt="uploaded pic" onClick={() => setSelectedImg(images.url)}/>
-      )) }
+      {imagesDoc && imagesDoc.map(images => (
+        <img src={images.url} key={images.id} alt="uploaded pic" onClick={() => setSelectedImg(images.url)} />
+      ))}
     </div>
   )
 }
