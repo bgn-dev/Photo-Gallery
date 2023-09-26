@@ -5,7 +5,7 @@ import { getStorage } from "@firebase/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  // Here you config
+  // CTRL+V
 };
 
 // Initialize Firebase
