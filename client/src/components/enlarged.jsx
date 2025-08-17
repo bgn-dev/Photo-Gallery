@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './Enlarged.css'
+import './enlarged.css'
 
 const Enlarged = ({ selectedImg, setSelectedImg }) => {
 

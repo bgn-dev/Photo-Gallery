@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { collection, onSnapshot, orderBy, query } from "@firebase/firestore"
 import { firestore } from '../firebase/config';
 
-import './Grid.css'
+import './grid.css'
 
 export default function Grid({ setSelectedImg }) {
 

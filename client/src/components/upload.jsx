@@ -3,7 +3,7 @@ import { storage, firestore } from "../firebase/config"
 import { addDoc, serverTimestamp, collection } from "@firebase/firestore"
 import { ref, uploadBytesResumable, getDownloadURL } from "@firebase/storage";
 
-import './Upload.css'
+import './upload.css'
 
 import { BiUpload } from 'react-icons/bi';
 

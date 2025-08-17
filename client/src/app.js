@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import Grid from './components/Grid';
-import Enlarged from './components/Enlarged';
-import Upload from './components/Upload';
+import Grid from './components/grid';
+import Enlarged from './components/enlarged';
+import Upload from './components/upload';
 
-import './App.css';
+import './app.css';
 
 function App() {
 
