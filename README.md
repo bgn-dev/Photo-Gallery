@@ -1,5 +1,5 @@
+[![Project Status: Inactive](https://www.repostatus.org/badges/latest/inactive.svg)](https://www.repostatus.org/#inactive)
 # Photo Gallery
-
 A modern, responsive photo gallery web application built with React and Firebase. Upload and view your photos with a clean interface.
 
 ## Features
